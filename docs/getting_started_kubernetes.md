@@ -27,7 +27,7 @@ kubectl config set-context --current --namespace=faas
 
 ### Serving
 
-Docs: https://knative.dev/docs/install/any-kubernetes-cluster/ ) 
+Docs: https://knative.dev/docs/install/any-kubernetes-cluster/
 
 Serving with Kourier networking
 ```
@@ -94,9 +94,9 @@ Update the `tls/cloudflare-secret.yaml` with the base64-encoded token value and 
 kubectl apply -f tls/cloudflare-secret.yaml
 ```
 
-#### KNative Serving Cert-Manager Integration
+#### Knative Serving Cert-Manager Integration
 
-Install the latest networking certmanager packaged with KNative Serving:
+Install the latest networking certmanager packaged with Knative Serving:
 Docs: https://knative.dev/docs/serving/using-auto-tls/
 
 ```
@@ -142,7 +142,7 @@ Note that on local clusters such as Kind, it is necessary to add the following a
 
 ### Troubleshooting
 
-Get the installed KNative serving and Eventing versions
+Get the installed Knative Serving and Eventing versions
 ```
 kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
 kubectl get namespace knative-eventing -o 'go-template={{index .metadata.labels "eventing.knative.dev/release"}}'
